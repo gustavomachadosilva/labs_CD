@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\gusta\OneDrive\Área de Trabalho\circuitosDigitais\LAB04\ULA\simulation\qsim
+vULA
+Z1 IWGM@>m28]7jGnO4V6=iYo0
+Z2 Vh=H@mUMZL?KfBW;UZel802
+Z3 dC:\altera\LAB04\ULA\simulation\qsim
+Z4 w1747261462
+Z5 8ULA.vo
+Z6 FULA.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|ULA.vo|
+Z9 o-work work -O0
+Z10 n@u@l@a
+!i10b 1
+Z11 !s100 hnHz??OT^nE83i4Qz7`do0
+!s85 0
+Z12 !s108 1747261463.173000
+Z13 !s107 ULA.vo|
+!s101 -O0
+vULA_vlg_check_tst
+!i10b 1
+Z14 !s100 g9172;>S8B`J:V:eNQ6IO3
+Z15 ISGAi9gS5lG2SHVEXhhZPH1
+Z16 V7V99cF<4S<<2cWkhjzBMQ2
+R3
+Z17 w1747261461
+Z18 8Waveform.vwf.vt
+Z19 FWaveform.vwf.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z20 !s108 1747261463.230000
+Z21 !s107 Waveform.vwf.vt|
+Z22 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R9
+Z23 n@u@l@a_vlg_check_tst
+vULA_vlg_sample_tst
+!i10b 1
+Z24 !s100 J]4nOUKNjWQ3W3?[8WRfE1
+Z25 IBmoOSkc>ZkBliB8]7[0h01
+Z26 V?l^_O7oV]1a[N?QAZ2mS72
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@u@l@a_vlg_sample_tst
+vULA_vlg_vec_tst
+!i10b 1
+Z28 !s100 z3:WSggj=j>Yk[Wj`cZAC2
+Z29 ILS1:iQO@4BRBR9F?[M^fd1
+Z30 V@H?nKIIOPXSf=Pjh4d^VA0
+R3
+R17
+R18
+R19
+Z31 L0 283
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@u@l@a_vlg_vec_tst

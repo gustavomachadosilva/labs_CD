@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aluno\Desktop\apagar\LAB05\ULA\simulation\qsim
+vULA
+Z1 !s100 >W]=3B5?D]K^G;odMoDCU0
+Z2 IM>6^=JOGgjJgm8TI=1ZZR3
+Z3 V5RGBTDgiSE`JRSnCa<HOk1
+Z4 dC:\altera\LAB05\ULA\simulation\qsim
+Z5 w1746050447
+Z6 8ULA.vo
+Z7 FULA.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|ULA.vo|
+Z10 o-work work -O0
+Z11 n@u@l@a
+!i10b 1
+!s85 0
+Z12 !s108 1746051665.338000
+Z13 !s107 ULA.vo|
+!s101 -O0
+vULA_vlg_check_tst
+!i10b 1
+Z14 !s100 JkKf[[:W[GXnhWKKWD1D;3
+Z15 I5E3UgVazCjZXLG9k?ic_i3
+Z16 Ven4VWY:2j^l9z[]7[1MdD0
+R4
+Z17 w1746051664
+Z18 8ULA.vt
+Z19 FULA.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z20 !s108 1746051665.376000
+Z21 !s107 ULA.vt|
+Z22 !s90 -work|work|ULA.vt|
+!s101 -O0
+R10
+Z23 n@u@l@a_vlg_check_tst
+vULA_vlg_sample_tst
+!i10b 1
+Z24 !s100 zm4@LUU0DCeS><lkJV_IV1
+Z25 I]z?Q6?>MV:db5O8?CK55^2
+Z26 VebhSLkQd4[DUh3Z3P]3JN1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@u@l@a_vlg_sample_tst
+vULA_vlg_vec_tst
+!i10b 1
+Z28 !s100 GcDWXd]@1DaQ4B4S9g<eg2
+Z29 IBK]fCH?<Ug?WS@;_hK10l3
+Z30 V@H?nKIIOPXSf=Pjh4d^VA0
+R4
+R17
+R18
+R19
+Z31 L0 263
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@u@l@a_vlg_vec_tst

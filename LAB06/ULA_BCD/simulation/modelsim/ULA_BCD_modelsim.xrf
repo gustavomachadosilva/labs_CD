@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/LAB06/ULA_BCD/E_dupla5.bdf
+source_file = 1, C:/altera/LAB06/ULA_BCD/db/ULA_BCD.cbx.xml
+design_name = E_dupla5
+instance = comp, \S~output\, S~output, E_dupla5, 1
+instance = comp, \A[1]~input\, A[1]~input, E_dupla5, 1
+instance = comp, \A[3]~input\, A[3]~input, E_dupla5, 1
+instance = comp, \A[2]~input\, A[2]~input, E_dupla5, 1
+instance = comp, \A[0]~input\, A[0]~input, E_dupla5, 1

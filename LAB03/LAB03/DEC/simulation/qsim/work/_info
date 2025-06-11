@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aluno\Desktop\apagar\LAB03\DEC\simulation\qsim
+vDEC
+Z1 !s100 PJ3>79T=@5_SPZ0ZPIX:V0
+Z2 ID5m=D0582cX^N@8XV8PjU1
+Z3 VA2`Sd`SB=V4L1D8]FJ^^02
+Z4 dC:\Users\gusta\OneDrive\Área de Trabalho\circuitosDigitais\LAB03\DEC\simulation\qsim
+Z5 w1744838393
+Z6 8DEC.vo
+Z7 FDEC.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|DEC.vo|
+Z10 o-work work -O0
+Z11 n@d@e@c
+!i10b 1
+!s85 0
+Z12 !s108 1744841320.952000
+Z13 !s107 DEC.vo|
+!s101 -O0
+vDEC_vlg_check_tst
+!i10b 1
+!s100 HI9kji?4;WAeD=`faEYSS0
+IDZ58PSK3704Xm4>2Pe@QS3
+Z14 V[3=kVkQo69YA?D@S^SCgB2
+R4
+Z15 w1744841319
+Z16 8DEC.vt
+Z17 FDEC.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z18 !s108 1744841321.017000
+Z19 !s107 DEC.vt|
+Z20 !s90 -work|work|DEC.vt|
+!s101 -O0
+R10
+Z21 n@d@e@c_vlg_check_tst
+vDEC_vlg_sample_tst
+!i10b 1
+!s100 X]h78aVaXC^9BEQaPQgm01
+IebE0TUnVa[K_A]MI@HS@O0
+Z22 VAfbRkdffX6]5X=Db@3?P=1
+R4
+R15
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z23 n@d@e@c_vlg_sample_tst
+vDEC_vlg_vec_tst
+!i10b 1
+!s100 G[ZM=fVTm2Fg[SPaf[7^Y0
+IS3AfdA10G0YBOA^UJ0B671
+Z24 Vcn8MFO[iKiUSAi=]PaI`M3
+R4
+R15
+R16
+R17
+Z25 L0 277
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z26 n@d@e@c_vlg_vec_tst
