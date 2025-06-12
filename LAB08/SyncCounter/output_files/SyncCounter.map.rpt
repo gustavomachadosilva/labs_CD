@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SyncCounter
-Wed Jun 11 15:52:39 2025
+Thu Jun 12 07:32:35 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -13,11 +13,9 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 11 15:52:39 2025      ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 12 07:32:35 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; SyncCounter                                ;
 ; Top-level Entity Name              ; CounterBCD                                 ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 0                                          ;
-;     Total combinational functions  ; 0                                          ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 25                                         ;
+; Total logic elements               ; 72                                         ;
+;     Total combinational functions  ; 72                                         ;
+;     Dedicated logic registers      ; 32                                         ;
+; Total registers                    ; 32                                         ;
+; Total pins                         ; 27                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -65,6 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C16F484C6       ;                    ;
 ; Top-level entity name                                                      ; CounterBCD         ; SyncCounter        ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -157,90 +156,94 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                 ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
-; Segmento_D.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/altera/LAB08/SyncCounter/Segmento_D.bdf   ;         ;
-; segmentof.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/altera/LAB08/SyncCounter/segmentof.bdf    ;         ;
-; SegmentoA.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/altera/LAB08/SyncCounter/SegmentoA.bdf    ;         ;
-; letraG.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/altera/LAB08/SyncCounter/letraG.bdf       ;         ;
-; E_dupla5.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/altera/LAB08/SyncCounter/E_dupla5.bdf     ;         ;
-; Diplay_C.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/altera/LAB08/SyncCounter/Diplay_C.bdf     ;         ;
-; BCD.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/altera/LAB08/SyncCounter/BCD.bdf          ;         ;
-; B.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/altera/LAB08/SyncCounter/B.bdf            ;         ;
-; MUX4_1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/altera/LAB08/SyncCounter/MUX4_1.bdf       ;         ;
-; SyncCounter8.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/altera/LAB08/SyncCounter/SyncCounter8.bdf ;         ;
-; CounterBCD.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/altera/LAB08/SyncCounter/CounterBCD.bdf   ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                      ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------+---------+
+; LAB07.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/LAB07.bdf        ;         ;
+; CLKDIV2NA8.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/CLKDIV2NA8.bdf   ;         ;
+; Segmento_D.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/Segmento_D.bdf   ;         ;
+; segmentof.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/segmentof.bdf    ;         ;
+; SegmentoA.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/SegmentoA.bdf    ;         ;
+; letraG.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/letraG.bdf       ;         ;
+; E_dupla5.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/E_dupla5.bdf     ;         ;
+; Diplay_C.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/Diplay_C.bdf     ;         ;
+; BCD.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/BCD.bdf          ;         ;
+; B.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/B.bdf            ;         ;
+; MUX4_1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/MUX4_1.bdf       ;         ;
+; SyncCounter8.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/SyncCounter8.bdf ;         ;
+; CounterBCD.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/altera/labs/LAB08/SyncCounter/CounterBCD.bdf   ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                      ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-;                                             ;                    ;
-; Total combinational functions               ; 0                  ;
-; Logic element usage by number of LUT inputs ;                    ;
-;     -- 4 input functions                    ; 0                  ;
-;     -- 3 input functions                    ; 0                  ;
-;     -- <=2 input functions                  ; 0                  ;
-;                                             ;                    ;
-; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 0                  ;
-;     -- arithmetic mode                      ; 0                  ;
-;                                             ;                    ;
-; Total registers                             ; 0                  ;
-;     -- Dedicated logic registers            ; 0                  ;
-;     -- I/O registers                        ; 0                  ;
-;                                             ;                    ;
-; I/O pins                                    ; 25                 ;
-; Embedded Multiplier 9-bit elements          ; 0                  ;
-; Maximum fan-out node                        ; Display1[6]~output ;
-; Maximum fan-out                             ; 1                  ;
-; Total fan-out                               ; 25                 ;
-; Average fan-out                             ; 0.50               ;
-+---------------------------------------------+--------------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 72          ;
+;                                             ;             ;
+; Total combinational functions               ; 72          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 40          ;
+;     -- 3 input functions                    ; 4           ;
+;     -- <=2 input functions                  ; 28          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 72          ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 32          ;
+;     -- Dedicated logic registers            ; 32          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 27          ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+; Maximum fan-out node                        ; Reset~input ;
+; Maximum fan-out                             ; 24          ;
+; Total fan-out                               ; 335         ;
+; Average fan-out                             ; 2.12        ;
++---------------------------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |CounterBCD                ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |CounterBCD         ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                 ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+; |CounterBCD                ; 72 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |CounterBCD                                 ; work         ;
+;    |BCD:inst1|             ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst1                       ; work         ;
+;       |B:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst1|B:inst1               ; work         ;
+;       |Diplay_C:inst2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst1|Diplay_C:inst2        ; work         ;
+;       |E_dupla5:inst4|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst1|E_dupla5:inst4        ; work         ;
+;       |SegmentoA:inst|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst1|SegmentoA:inst        ; work         ;
+;       |Segmento_D:inst3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst1|Segmento_D:inst3      ; work         ;
+;       |letraG:inst6|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst1|letraG:inst6          ; work         ;
+;       |segmentof:inst5|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst1|segmentof:inst5       ; work         ;
+;    |BCD:inst2|             ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst2                       ; work         ;
+;       |B:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst2|B:inst1               ; work         ;
+;       |Diplay_C:inst2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst2|Diplay_C:inst2        ; work         ;
+;       |E_dupla5:inst4|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst2|E_dupla5:inst4        ; work         ;
+;       |SegmentoA:inst|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst2|SegmentoA:inst        ; work         ;
+;       |Segmento_D:inst3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst2|Segmento_D:inst3      ; work         ;
+;       |letraG:inst6|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst2|letraG:inst6          ; work         ;
+;       |segmentof:inst5|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|BCD:inst2|segmentof:inst5       ; work         ;
+;    |LAB07:inst3|           ; 24 (0)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|LAB07:inst3                     ; work         ;
+;       |CLKDIV2NA8:inst1|   ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|LAB07:inst3|CLKDIV2NA8:inst1    ; work         ;
+;       |CLKDIV2NA8:inst2|   ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|LAB07:inst3|CLKDIV2NA8:inst2    ; work         ;
+;       |CLKDIV2NA8:inst|    ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|LAB07:inst3|CLKDIV2NA8:inst     ; work         ;
+;    |SyncCounter8:inst|     ; 34 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|SyncCounter8:inst               ; work         ;
+;       |MUX4_1:inst11|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|SyncCounter8:inst|MUX4_1:inst11 ; work         ;
+;       |MUX4_1:inst16|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|SyncCounter8:inst|MUX4_1:inst16 ; work         ;
+;       |MUX4_1:inst22|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|SyncCounter8:inst|MUX4_1:inst22 ; work         ;
+;       |MUX4_1:inst28|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|SyncCounter8:inst|MUX4_1:inst28 ; work         ;
+;       |MUX4_1:inst34|      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|SyncCounter8:inst|MUX4_1:inst34 ; work         ;
+;       |MUX4_1:inst40|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|SyncCounter8:inst|MUX4_1:inst40 ; work         ;
+;       |MUX4_1:inst4|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|SyncCounter8:inst|MUX4_1:inst4  ; work         ;
+;       |MUX4_1:inst8|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CounterBCD|SyncCounter8:inst|MUX4_1:inst8  ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                           ;
-+---------------------------------------+--------------------------------------+
-; Register name                         ; Reason for Removal                   ;
-+---------------------------------------+--------------------------------------+
-; SyncCounter8:inst|inst                ; Stuck at GND due to stuck port clock ;
-; SyncCounter8:inst|inst1               ; Stuck at GND due to stuck port clock ;
-; SyncCounter8:inst|inst2               ; Stuck at GND due to stuck port clock ;
-; SyncCounter8:inst|inst5               ; Stuck at GND due to stuck port clock ;
-; SyncCounter8:inst|inst21              ; Stuck at GND due to stuck port clock ;
-; SyncCounter8:inst|inst27              ; Stuck at GND due to stuck port clock ;
-; SyncCounter8:inst|inst33              ; Stuck at GND due to stuck port clock ;
-; SyncCounter8:inst|inst39              ; Stuck at GND due to stuck port clock ;
-; Total Number of Removed Registers = 8 ;                                      ;
-+---------------------------------------+--------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                      ;
-+------------------------+-------------------------+-------------------------------------------------------------------------------+
-; Register name          ; Reason for Removal      ; Registers Removed due to This Register                                        ;
-+------------------------+-------------------------+-------------------------------------------------------------------------------+
-; SyncCounter8:inst|inst ; Stuck at GND            ; SyncCounter8:inst|inst1, SyncCounter8:inst|inst2, SyncCounter8:inst|inst5,    ;
-;                        ; due to stuck port clock ; SyncCounter8:inst|inst21, SyncCounter8:inst|inst27, SyncCounter8:inst|inst33, ;
-;                        ;                         ; SyncCounter8:inst|inst39                                                      ;
-+------------------------+-------------------------+-------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -248,10 +251,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 32    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 24    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -273,9 +276,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Jun 11 15:52:38 2025
+    Info: Processing started: Thu Jun 12 07:32:34 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SyncCounter -c SyncCounter
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file lab07.bdf
+    Info (12023): Found entity 1: LAB07
+Info (12021): Found 1 design units, including 1 entities, in source file clkdiv2na8.bdf
+    Info (12023): Found entity 1: CLKDIV2NA8
 Info (12021): Found 1 design units, including 1 entities, in source file segmento_d.bdf
     Info (12023): Found entity 1: Segmento_D
 Info (12021): Found 1 design units, including 1 entities, in source file segmentof.bdf
@@ -303,8 +310,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file synccou
 Info (12021): Found 1 design units, including 1 entities, in source file counterbcd.bdf
     Info (12023): Found entity 1: CounterBCD
 Info (12127): Elaborating entity "CounterBCD" for the top level hierarchy
-Warning (275013): Port "Clk" of type SyncCounter8 and instance "inst" is missing source signal
-Warning (275009): Pin "Reset" not connected
+Info (12128): Elaborating entity "LAB07" for hierarchy "LAB07:inst3"
+Info (12128): Elaborating entity "CLKDIV2NA8" for hierarchy "LAB07:inst3|CLKDIV2NA8:inst2"
 Info (12128): Elaborating entity "BCD" for hierarchy "BCD:inst2"
 Info (12128): Elaborating entity "SegmentoA" for hierarchy "BCD:inst2|SegmentoA:inst"
 Info (12128): Elaborating entity "B" for hierarchy "BCD:inst2|B:inst1"
@@ -315,41 +322,16 @@ Info (12128): Elaborating entity "segmentof" for hierarchy "BCD:inst2|segmentof:
 Info (12128): Elaborating entity "letraG" for hierarchy "BCD:inst2|letraG:inst6"
 Info (12128): Elaborating entity "SyncCounter8" for hierarchy "SyncCounter8:inst"
 Info (12128): Elaborating entity "MUX4_1" for hierarchy "SyncCounter8:inst|MUX4_1:inst4"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Display1[6]" is stuck at VCC
-    Warning (13410): Pin "Display1[5]" is stuck at GND
-    Warning (13410): Pin "Display1[4]" is stuck at GND
-    Warning (13410): Pin "Display1[3]" is stuck at GND
-    Warning (13410): Pin "Display1[2]" is stuck at GND
-    Warning (13410): Pin "Display1[1]" is stuck at GND
-    Warning (13410): Pin "Display1[0]" is stuck at GND
-    Warning (13410): Pin "Display2[6]" is stuck at VCC
-    Warning (13410): Pin "Display2[5]" is stuck at GND
-    Warning (13410): Pin "Display2[4]" is stuck at GND
-    Warning (13410): Pin "Display2[3]" is stuck at GND
-    Warning (13410): Pin "Display2[2]" is stuck at GND
-    Warning (13410): Pin "Display2[1]" is stuck at GND
-    Warning (13410): Pin "Display2[0]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "D[7]"
-    Warning (15610): No output dependent on input pin "D[6]"
-    Warning (15610): No output dependent on input pin "D[5]"
-    Warning (15610): No output dependent on input pin "D[4]"
-    Warning (15610): No output dependent on input pin "D[3]"
-    Warning (15610): No output dependent on input pin "D[2]"
-    Warning (15610): No output dependent on input pin "D[1]"
-    Warning (15610): No output dependent on input pin "D[0]"
-    Warning (15610): No output dependent on input pin "Sel[1]"
-    Warning (15610): No output dependent on input pin "Sel[0]"
-    Warning (15610): No output dependent on input pin "Reset"
-Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 14 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 30 warnings
+Info (21057): Implemented 99 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 72 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4627 megabytes
-    Info: Processing ended: Wed Jun 11 15:52:39 2025
+    Info: Processing ended: Thu Jun 12 07:32:35 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

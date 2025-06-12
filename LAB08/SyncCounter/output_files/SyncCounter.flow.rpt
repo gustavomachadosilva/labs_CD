@@ -1,5 +1,5 @@
 Flow report for SyncCounter
-Wed Jun 11 15:52:50 2025
+Thu Jun 12 07:32:46 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Wed Jun 11 15:52:50 2025      ;
+; Flow Status                        ; Successful - Thu Jun 12 07:32:46 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; SyncCounter                                ;
 ; Top-level Entity Name              ; CounterBCD                                 ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 0 / 5,136 ( 0 % )                          ;
-;     Total combinational functions  ; 0 / 5,136 ( 0 % )                          ;
-;     Dedicated logic registers      ; 0 / 5,136 ( 0 % )                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 25 / 183 ( 14 % )                          ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0 / 423,936 ( 0 % )                        ;
-; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                              ;
-; Device                             ; EP3C5F256C6                                ;
+; Device                             ; EP3C16F484C6                               ;
 ; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 96 / 15,408 ( < 1 % )                      ;
+;     Total combinational functions  ; 72 / 15,408 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 32 / 15,408 ( < 1 % )                      ;
+; Total registers                    ; 32                                         ;
+; Total pins                         ; 27 / 347 ( 8 % )                           ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0 / 516,096 ( 0 % )                        ;
+; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                            ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -64,26 +64,30 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/11/2025 15:52:39 ;
+; Start date & time ; 06/12/2025 07:32:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SyncCounter         ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 269058766715974.174966795907500 ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; CounterBCD  ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; CounterBCD  ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; CounterBCD  ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; CounterBCD                      ; SyncCounter   ; --          ; --             ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                           ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 269058766715974.174972435406580       ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; CounterBCD  ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; CounterBCD  ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; CounterBCD  ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; CounterBCD                            ; SyncCounter   ; --          ; --             ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -92,11 +96,11 @@ applicable agreement for further details.
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4616 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 4885 MB             ; 00:00:03                           ;
-; Assembler                 ; 00:00:00     ; 1.0                     ; 4572 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4606 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:06                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 4957 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4575 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4627 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4532 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:08                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

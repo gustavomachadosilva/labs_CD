@@ -1,4 +1,7 @@
 |CounterBCD
+ClkOut <= LAB07:inst3.CLKOUT
+ClkIn => LAB07:inst3.CLK
+Reset => LAB07:inst3.RESET
 Display1[0] <= BCD:inst2.S[0]
 Display1[1] <= BCD:inst2.S[1]
 Display1[2] <= BCD:inst2.S[2]
@@ -23,7 +26,53 @@ Display2[3] <= BCD:inst1.S[3]
 Display2[4] <= BCD:inst1.S[4]
 Display2[5] <= BCD:inst1.S[5]
 Display2[6] <= BCD:inst1.S[6]
-Reset => ~NO_FANOUT~
+
+
+|CounterBCD|LAB07:inst3
+CLKOUT <= CLKDIV2NA8:inst2.CLKOUT
+CLK => CLKDIV2NA8:inst.CLKIN
+RESET => CLKDIV2NA8:inst.RST
+RESET => CLKDIV2NA8:inst1.RST
+RESET => CLKDIV2NA8:inst2.RST
+
+
+|CounterBCD|LAB07:inst3|CLKDIV2NA8:inst2
+CLKOUT <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst12.ACLR
+RST => inst14.ACLR
+RST => inst10.ACLR
+RST => inst8.ACLR
+RST => inst3.ACLR
+RST => inst2.ACLR
+RST => inst1.ACLR
+RST => inst.ACLR
+CLKIN => inst.CLK
+
+
+|CounterBCD|LAB07:inst3|CLKDIV2NA8:inst1
+CLKOUT <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst12.ACLR
+RST => inst14.ACLR
+RST => inst10.ACLR
+RST => inst8.ACLR
+RST => inst3.ACLR
+RST => inst2.ACLR
+RST => inst1.ACLR
+RST => inst.ACLR
+CLKIN => inst.CLK
+
+
+|CounterBCD|LAB07:inst3|CLKDIV2NA8:inst
+CLKOUT <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst12.ACLR
+RST => inst14.ACLR
+RST => inst10.ACLR
+RST => inst8.ACLR
+RST => inst3.ACLR
+RST => inst2.ACLR
+RST => inst1.ACLR
+RST => inst.ACLR
+CLKIN => inst.CLK
 
 
 |CounterBCD|BCD:inst2

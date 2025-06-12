@@ -1,0 +1,47 @@
+|LAB07
+CLKOUT <= CLKDIV2NA8:inst2.CLKOUT
+CLK => CLKDIV2NA8:inst.CLKIN
+RESET => CLKDIV2NA8:inst.RST
+RESET => CLKDIV2NA8:inst1.RST
+RESET => CLKDIV2NA8:inst2.RST
+
+
+|LAB07|CLKDIV2NA8:inst2
+CLKOUT <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst12.ACLR
+RST => inst14.ACLR
+RST => inst10.ACLR
+RST => inst8.ACLR
+RST => inst3.ACLR
+RST => inst2.ACLR
+RST => inst1.ACLR
+RST => inst.ACLR
+CLKIN => inst.CLK
+
+
+|LAB07|CLKDIV2NA8:inst1
+CLKOUT <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst12.ACLR
+RST => inst14.ACLR
+RST => inst10.ACLR
+RST => inst8.ACLR
+RST => inst3.ACLR
+RST => inst2.ACLR
+RST => inst1.ACLR
+RST => inst.ACLR
+CLKIN => inst.CLK
+
+
+|LAB07|CLKDIV2NA8:inst
+CLKOUT <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst12.ACLR
+RST => inst14.ACLR
+RST => inst10.ACLR
+RST => inst8.ACLR
+RST => inst3.ACLR
+RST => inst2.ACLR
+RST => inst1.ACLR
+RST => inst.ACLR
+CLKIN => inst.CLK
+
+
